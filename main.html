@@ -1,16 +1,103 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Cards Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div class="container py-4">
+    <h2 class="text-center mb-4">Cards Gallery</h2>
+    <div class="row">
+      <div class="col-md-4 col-lg-4 mb-4">
+        <div class="card h-100 rounded-lg shadow-sm mb-4">
+          <img src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg"
+               class="card-img-top rounded-top img-fluid"
+               alt="Gallery Image 1"
+               data-toggle="modal" data-target="#lightboxModal"
+               data-img="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg">
+          <div class="card-body text-center">
+            <h6 class="card-title text-center">Mountain Vista</h6>
+            <p class="card-text text-center">Lush landscape with stunning peak in view.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4 mb-4">
+        <div class="card h-100 rounded-lg shadow-sm mb-4">
+          <img src="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg"
+               class="card-img-top rounded-top img-fluid"
+               alt="Gallery Image 2"
+               data-toggle="modal" data-target="#lightboxModal"
+               data-img="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg">
+          <div class="card-body text-center">
+            <h6 class="card-title text-center">River Valley</h6>
+            <p class="card-text text-center">Tranquil waters flowing through green canyons.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4 mb-4">
+        <div class="card h-100 rounded-lg shadow-sm mb-4">
+          <img src="https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg"
+               class="card-img-top rounded-top img-fluid"
+               alt="Gallery Image 3"
+               data-toggle="modal" data-target="#lightboxModal"
+               data-img="https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg">
+          <div class="card-body text-center">
+            <h6 class="card-title text-center">Golden Plains</h6>
+            <p class="card-text text-center">Wide open lands shining under the afternoon sun.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4 mb-4">
+        <div class="card h-100 rounded-lg shadow-sm mb-4">
+          <img src="https://storage.googleapis.com/acciojob-open-file-collections/image4.jpg"
+               class="card-img-top rounded-top img-fluid"
+               alt="Gallery Image 4"
+               data-toggle="modal" data-target="#lightboxModal"
+               data-img="https://storage.googleapis.com/acciojob-open-file-collections/image4.jpg">
+          <div class="card-body text-center">
+            <h6 class="card-title text-center">Crystal Lake</h6>
+            <p class="card-text text-center">Reflections rippling on a serene mountain lake.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4 mb-4">
+        <div class="card h-100 rounded-lg shadow-sm mb-4">
+          <img src="https://storage.googleapis.com/acciojob-open-file-collections/image5.jpg"
+               class="card-img-top rounded-top img-fluid"
+               alt="Gallery Image 5"
+               data-toggle="modal" data-target="#lightboxModal"
+               data-img="https://storage.googleapis.com/acciojob-open-file-collections/image5.jpg">
+          <div class="card-body text-center">
+            <h6 class="card-title text-center">Seaside Outcrop</h6>
+            <p class="card-text text-center">Dramatic rocks above a calm, endless sea.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4 mb-4">
+        <div class="card h-100 rounded-lg shadow-sm mb-4">
+          <img src="https://storage.googleapis.com/acciojob-open-file-collections/image6.jpg"
+               class="card-img-top rounded-top img-fluid"
+               alt="Gallery Image 6"
+               data-toggle="modal" data-target="#lightboxModal"
+               data-img="https://storage.googleapis.com/acciojob-open-file-collections/image6.jpg">
+          <div class="card-body text-center">
+            <h6 class="card-title text-center">City Lights</h6>
+            <p class="card-text text-center">An illuminated city skyline at dusk.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade lightbox" id="lightboxModal" tabindex="-1" role="dialog" aria-labelledby="lightboxModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-body p-0 text-center">
+          <img src="" id="lightboxImage" class="img-fluid rounded" alt="Expanded Gallery" style="max-height:80vh;">
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-
 </html>
