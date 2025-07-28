@@ -1,103 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cards Gallery</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    .card img {
+      border-radius: 8px 8px 0 0;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <div class="container py-4">
-    <h2 class="text-center mb-4">Cards Gallery</h2>
-    <div class="row">
-      <div class="col-md-4 col-lg-4 mb-4">
-        <div class="card h-100 rounded-lg shadow-sm mb-4">
-          <img src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg"
-               class="card-img-top rounded-top img-fluid"
-               alt="Gallery Image 1"
-               data-toggle="modal" data-target="#lightboxModal"
-               data-img="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg">
+  <div class="container my-4">
+    <h2>Cards Gallery</h2>
+    <div class="row g-4 justify-content-center">
+      <!-- Cards -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg" class="card-img-top lightbox" alt="Image 1" data-bs-toggle="modal" data-bs-target="#imageModal" data-index="0" />
           <div class="card-body text-center">
-            <h6 class="card-title text-center">Mountain Vista</h6>
-            <p class="card-text text-center">Lush landscape with stunning peak in view.</p>
+            <h6 class="card-title">Lorem Ipsum</h6>
+            <p class="card-text">Some quick example text to build on the card title.</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-lg-4 mb-4">
-        <div class="card h-100 rounded-lg shadow-sm mb-4">
-          <img src="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg"
-               class="card-img-top rounded-top img-fluid"
-               alt="Gallery Image 2"
-               data-toggle="modal" data-target="#lightboxModal"
-               data-img="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg">
+
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg" class="card-img-top lightbox" alt="Image 2" data-bs-toggle="modal" data-bs-target="#imageModal" data-index="1" />
           <div class="card-body text-center">
-            <h6 class="card-title text-center">River Valley</h6>
-            <p class="card-text text-center">Tranquil waters flowing through green canyons.</p>
+            <h6 class="card-title">Lorem Ipsum</h6>
+            <p class="card-text">Some quick example text to build on the card title.</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-lg-4 mb-4">
-        <div class="card h-100 rounded-lg shadow-sm mb-4">
-          <img src="https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg"
-               class="card-img-top rounded-top img-fluid"
-               alt="Gallery Image 3"
-               data-toggle="modal" data-target="#lightboxModal"
-               data-img="https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg">
+
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg" class="card-img-top lightbox" alt="Image 3" data-bs-toggle="modal" data-bs-target="#imageModal" data-index="2" />
           <div class="card-body text-center">
-            <h6 class="card-title text-center">Golden Plains</h6>
-            <p class="card-text text-center">Wide open lands shining under the afternoon sun.</p>
+            <h6 class="card-title">Lorem Ipsum</h6>
+            <p class="card-text">Some quick example text to build on the card title.</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-lg-4 mb-4">
-        <div class="card h-100 rounded-lg shadow-sm mb-4">
-          <img src="https://storage.googleapis.com/acciojob-open-file-collections/image4.jpg"
-               class="card-img-top rounded-top img-fluid"
-               alt="Gallery Image 4"
-               data-toggle="modal" data-target="#lightboxModal"
-               data-img="https://storage.googleapis.com/acciojob-open-file-collections/image4.jpg">
+
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="https://storage.googleapis.com/acciojob-open-file-collections/image4.jpg" class="card-img-top lightbox" alt="Image 4" data-bs-toggle="modal" data-bs-target="#imageModal" data-index="3" />
           <div class="card-body text-center">
-            <h6 class="card-title text-center">Crystal Lake</h6>
-            <p class="card-text text-center">Reflections rippling on a serene mountain lake.</p>
+            <h6 class="card-title">Lorem Ipsum</h6>
+            <p class="card-text">Some quick example text to build on the card title.</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-lg-4 mb-4">
-        <div class="card h-100 rounded-lg shadow-sm mb-4">
-          <img src="https://storage.googleapis.com/acciojob-open-file-collections/image5.jpg"
-               class="card-img-top rounded-top img-fluid"
-               alt="Gallery Image 5"
-               data-toggle="modal" data-target="#lightboxModal"
-               data-img="https://storage.googleapis.com/acciojob-open-file-collections/image5.jpg">
+
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="https://storage.googleapis.com/acciojob-open-file-collections/image5.jpg" class="card-img-top lightbox" alt="Image 5" data-bs-toggle="modal" data-bs-target="#imageModal" data-index="4" />
           <div class="card-body text-center">
-            <h6 class="card-title text-center">Seaside Outcrop</h6>
-            <p class="card-text text-center">Dramatic rocks above a calm, endless sea.</p>
+            <h6 class="card-title">Lorem Ipsum</h6>
+            <p class="card-text">Some quick example text to build on the card title.</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-lg-4 mb-4">
-        <div class="card h-100 rounded-lg shadow-sm mb-4">
-          <img src="https://storage.googleapis.com/acciojob-open-file-collections/image6.jpg"
-               class="card-img-top rounded-top img-fluid"
-               alt="Gallery Image 6"
-               data-toggle="modal" data-target="#lightboxModal"
-               data-img="https://storage.googleapis.com/acciojob-open-file-collections/image6.jpg">
+
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="https://storage.googleapis.com/acciojob-open-file-collections/image6.jpg" class="card-img-top lightbox" alt="Image 6" data-bs-toggle="modal" data-bs-target="#imageModal" data-index="5" />
           <div class="card-body text-center">
-            <h6 class="card-title text-center">City Lights</h6>
-            <p class="card-text text-center">An illuminated city skyline at dusk.</p>
+            <h6 class="card-title">Lorem Ipsum</h6>
+            <p class="card-text">Some quick example text to build on the card title.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade lightbox" id="lightboxModal" tabindex="-1" role="dialog" aria-labelledby="lightboxModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+
+  <!-- Modal with Carousel -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content bg-transparent border-0">
-        <div class="modal-body p-0 text-center">
-          <img src="" id="lightboxImage" class="img-fluid rounded" alt="Expanded Gallery" style="max-height:80vh;">
+        <div class="modal-body p-0">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+			  <div class="lightbox d-block w-100" style="background-image: url('https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg'); background-size: cover; background-position: center; height: 500px;"></div>
+			</div>
+			<div class="carousel-item">
+			  <div class="lightbox d-block w-100" style="background-image: url('https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg'); background-size: cover; background-position: center; height: 500px;"></div>
+			</div>
+			<div class="carousel-item">
+			  <div class="lightbox d-block w-100" style="background-image: url('https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg'); background-size: cover; background-position: center; height: 500px;"></div>
+			</div>
+			<div class="carousel-item">
+			  <div class="lightbox d-block w-100" style="background-image: url('https://storage.googleapis.com/acciojob-open-file-collections/image4.jpg'); background-size: cover; background-position: center; height: 500px;"></div>
+			</div>
+			<div class="carousel-item">
+			  <div class="lightbox d-block w-100" style="background-image: url('https://storage.googleapis.com/acciojob-open-file-collections/image5.jpg'); background-size: cover; background-position: center; height: 500px;"></div>
+			</div>
+			<div class="carousel-item">
+			  <div class="lightbox d-block w-100" style="background-image: url('https://storage.googleapis.com/acciojob-open-file-collections/image6.jpg'); background-size: cover; background-position: center; height: 500px;"></div>
+			</div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const carousel = document.querySelector('#carouselExampleIndicators');
+    const images = document.querySelectorAll('.lightbox');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        const index = parseInt(img.getAttribute('data-index'));
+        const carouselInstance = bootstrap.Carousel.getInstance(carousel) || new bootstrap.Carousel(carousel);
+        carouselInstance.to(index);
+      });
+    });
+  </script>
 </body>
 </html>
